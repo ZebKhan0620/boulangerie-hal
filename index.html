@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="フランス伝統を受け継ぐ本格ブーランジェリー。毎朝丁寧に仕込み、香り高く焼き上げる特別な一品をお楽しみください。" />
+  <meta name="keywords" content="ブーランジェリー, フランスパン, ベーカリー, 郷土料理" />
+  <meta name="author" content="Boulangerie HAL" />
+  <title>HAL ブーランジェリー</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/cs/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+  <script>
+    (function (d) {
+      var config = {
+        kitId: "cvg7grw",
+        scriptTimeout: 3000,  
+        async: true,
+      },
+        h = d.documentElement,
+        t = setTimeout(function () {
+          h.className =
+            h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+        }, config.scriptTimeout),
+        tk = d.createElement("script"),
+        f = false,
+        s = d.getElementsByTagName("script")[0],
+        a;
+      h.className += " wf-loading";
+      tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+      tk.async = true;
+      tk.onload = tk.onreadystatechange = function () {
+        a = this.readyState;
+        if (f || (a && a != "complete" && a != "loaded")) return;
+        f = true;
+        clearTimeout(t);
+        try {
+          Typekit.load(config);
+        } catch (e) { }
+      };
+      s.parentNode.insertBefore(tk, s);
+    })(document);
+  </script>
+</head>
+
+<body class="bg-white">
+  <!-- Header Section -->
+  <header class="bg-white" id="home">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <!-- Logo -->
+      <div class="w-305 h-45 text-white my-4">
+        <img src="/images/HAL-main-logo.svg" alt="Boulangerie Hal Logo" width="305" height="45" />
+      </div>
+
+      <!-- Navigation -->
+      <nav aria-label="Main Navigation">
+  <ul class="flex space-x-10 hiragino-mincho-pron-bold">
+    <li><a href="#home" class="text-gray-700 hover:text-gray-900">HOME</a></li>
+    <li><a href="#about" class="text-gray-700 hover:text-gray-900">ABOUT</a></li>
+    <li><a href="#news" class="text-gray-700 hover:text-gray-900">NEWS</a></li>
+    <li><a href="#menu" class="text-gray-700 hover:text-gray-900">MENU</a></li>
+    <li><a href="#location" class="text-gray-700 hover:text-gray-900">LOCATION</a></li>
+    <li><a href="#contact" class="text-gray-700 hover:text-gray-900">CONTACT</a></li>
+  </ul>
+</nav>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="relative bg-[url('/images/hero-img.jpg')] bg-cover bg-center h-[680px] max-w-[1366px] mx-auto mb-[80px] border-2 border-[#C19A6B]">
+    <div class="absolute inset-0 bg-black bg-opacity-5"></div>
+    <div class="relative container top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left">
+      <h1 class="text-5xl mb-4 hiragino-mincho-pron-bold text-white">
+        フランス伝統を受け継ぐ<br />本格ブーランジェリー
+      </h1>
+      <p class="text-lg mb-8 yu-mincho-pr6n text-white">
+        毎朝丁寧に仕込み、香り高く焼き上げる特別な一品を
+      </p>
+      <div class="text-left">
+        <a href="#menu"
+          class="bg-[#333333] hover:bg-[#555555] text-[#C19A6B] py-3 px-6 text-lg yu-mincho-pr6n">メニューを見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="mx-auto max-w-[1366px]">
+    <!-- About Us Section -->
+    <section id="about" class="py-20 mb-[80px] border-2 border-[#C19A6B]">
+      <div class="container mx-auto flex flex-wrap justify-between gap-10">
+        <!-- Text Section -->
+        <div class="flex-1 min-w-[300px] max-w-[48%]">
+          <h2 class="text-4xl mb-6 hiragino-mincho-pron-bold text-[#333333]">
+            About Us
+          </h2>
+          <p class="text-lg yu-mincho-pr6n text-[#555555] text-justify mb-6">
+            Boulangerie
+            HALは、フランス伝統の製法と日本の繊細な技術を掛け合わせることで、毎日変わらぬ香りと食感を生み出しています。<br />
+            厳選した穀物を使い、じっくりと時間をかけて発酵させることで、素材本来の旨みが引き立つ一品に。<br />
+            地域に根ざし、日々進化する味わいを、皆様の食卓へお届けすることが私たちの喜びです。
+          </p>
+          <div class="text-left">
+            <a href="#about"
+              class="bg-[#333333] hover:bg-[#555555] text-[#C19A6B] py-3 px-10 text-lg yu-mincho-pr6n">詳しく見る</a>
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="flex-1 flex justify-between gap-10">
+          <img src="/images/about1.jpg" alt="About Image 1"
+            class="w-max max-w-[306px] h-auto object-cover border-2 border-[#D4AF37]" />
+          <img src="/images/about2.jpg" alt="About Image 2"
+            class="w-max max-w-[306px] h-auto object-cover border-2 border-[#D4AF37]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="py-20 mb-[80px] mx-auto">
+      <div class="container flex flex-wrap justify-between gap-10">
+        <!-- Image Section -->
+        <div class="flex-1 min-w-[300px] max-w-[40%]">
+          <img src="/images/news.jpg" alt="News Image"
+            class="w-[100%] max-w-[518px] h-[100%] max-h-[372px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+        <!-- Text Section -->
+        <div class="flex-1 min-w-[300px] max-w-[48%]">
+          <h2 class="text-4xl mb-6 hiragino-mincho-pron-bold text-[#333333]">
+            NEWS
+          </h2>
+          <ul class="list-disc pl-5 yu-mincho-pr6n text-[#555555]">
+            <li class="mb-4">
+              <span class=" font-bold border-b border-[#333333]">2022年11月30日</span>
+              <p>フランス　オーベルニュ地方の伝統パンや郷土料理の惣菜パンなどを販売するオーベルニュ地方フェアを開催いたします。</p>
+            </li>
+            <li class="mb-4">
+              <span class="font-bold border-b border-[#333333]">2022年11月16日</span>
+              <p>ご好評いただいております、デザートに、季節限定でオレンジを使用したデザートが加わります。</p>
+            </li>
+            <li>
+              <span class="font-bold border-b border-[#333333]">2022年11月8日</span>
+              <p>名産フルム・ダンベールチーズを使った特別なパンや郷土料理風惣菜パンが期間限定で登場。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==============================
+     1) Original Menu Section
+     ============================== -->
+    <!-- Menu Section -->
+    <section id="menu" class="py-10 border-2 border-[#C19A6B] mb-[80px]">
+      <div class="container mx-auto flex justify-evenly items-center transition duration-300" id="menu-container">
+        <!-- Left Image -->
+        <div class="flex justify-center items-center transition duration-300" id="leftImage">
+          <img src="/images/menu1.jpg" alt="フワス ヴェルヴェンヌ"
+            class=" w-[372px] h-[500px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+
+        <!-- Center Text Section -->
+        <div class="flex flex-col gap-6">
+          <!-- Card 1 -->
+          <div
+            class="shadow-md p-6 border border-[#E0E0E0] flex flex-col items-center justify-center w-[412px] h-[240px] transition duration-300"
+            id="card1">
+            <h3 class="text-xl text-center hiragino-mincho-pron-bold mb-4 text-[#333333]">
+              フワス ヴェルヴェンヌ
+            </h3>
+            <p class="text-sm yu-mincho-pr6n text-[#555555] text-center mb-4">
+              オーベルニュ特産のハーブ「ヴェルヴェンヌ」と柑橘の爽やかな香りを練り込んだブリオッシュ。口に広がる芳醇な風味をお楽しみください。
+            </p>
+            <p class="bg-[#333333] hiragino-mincho-pron-bold text-[#C19A6B] text-center px-10 py-2 mb-4">PRICE: ¥450</p>
+            <button class="bg-[#333333] text-[#C19A6B] yu-mincho-pr6n py-2 px-4 text-sm hover:bg-[#555555]">
+              注文する
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="shadow-md p-6 border border-[#E0E0E0] flex flex-col items-center justify-center w-[412px] h-[240px] transition duration-300"
+            id="card2">
+            <h3 class="text-xl text-center hiragino-mincho-pron-bold mb-4 text-[#333333]">
+              ソーセージとレンズ豆のタルティーヌ
+            </h3>
+            <p class="text-sm yu-mincho-pr6n text-center text-[#555555] mb-4">
+              コクのあるレンズ豆、ソーセージ、マッシュポテトをのせたボリューム満点のタルティーヌ。旨みあふれる組み合わせが食欲をそそります。
+            </p>
+            <p class="text-lg hiragino-mincho-pron-bold bg-[#333333] text-[#C19A6B] px-10 py-2 mb-4">PRICE: ¥650</p>
+            <button class="bg-[#333333] yu-mincho-pr6n text-[#C19A6B] py-2 px-4 text-sm hover:bg-[#555555]">
+              注文する
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div class="flex justify-center items-center transition duration-300" id="rightImage">
+          <img src="/images/menu2.jpg" alt="パン画像" class="w-[372px] h-[500px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+     2) Second Menu Section
+     ============================== -->
+    <section id="menu2" class="py-10 border-2 border-[#C19A6B] mb-[80px]">
+      <div class="container mx-auto flex justify-evenly items-center transition duration-300" id="menu-container2">
+        <!-- Left Image (Section 2) -->
+        <div class="flex justify-center items-center transition duration-300" id="leftImage2">
+          <img src="/images/menu3.jpg" alt="塩豚とレンズ豆のパイ"
+            class="w-[372px] h-[500px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+
+        <!-- Center Text Section (Section 2) -->
+        <div class="flex flex-col gap-6">
+          <!-- Card 3 -->
+          <div class="shadow-md p-6 border border-[#E0E0E0]
+               flex flex-col items-center justify-center
+               w-[412px] h-[240px]
+               transition duration-300" id="card3">
+            <h3 class="text-xl text-center hiragino-mincho-pron-bold mb-4 text-[#333333]">
+              塩豚とレンズ豆のパイ
+            </h3>
+            <p class="text-sm yu-mincho-pr6n text-center text-[#555555] mb-4">
+              オーベルニュ地方ルピュイ産のレンズ豆を、塩豚・ベーコン・香味野菜でじっくり煮込み、
+              パイ生地で包んだ郷土料理仕立て。旨みが凝縮した贅沢な味わいです。
+            </p>
+            <p class="text-lg hiragino-mincho-pron-bold bg-[#333333] text-[#C19A6B]
+                 px-10 py-2 mb-4">
+              PRICE: ¥700
+            </p>
+            <button class="bg-[#333333] yu-mincho-pr6n text-[#C19A6B] py-2 px-4 text-sm hover:bg-[#555555]">
+              注文する
+            </button>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="shadow-md p-6 border border-[#E0E0E0]
+               flex flex-col items-center justify-center
+               w-[412px] h-[240px]
+               transition duration-300" id="card4">
+            <h3 class="text-xl text-center hiragino-mincho-pron-bold mb-4 text-[#333333]">
+              トリュファード風クロワッサン
+            </h3>
+            <p class="text-sm text-center yu-mincho-pr6n text-[#555555] mb-4">
+              オーベルニュ地方ルピュイ産のレンズ豆を、塩豚・ベーコン・香味野菜でじっくり煮込み、
+              パイ生地で包んだ郷土料理仕立て。旨みが凝縮した贅沢な味わいです。
+            </p>
+            <p class="text-lg hiragino-mincho-pron-bold bg-[#333333] text-[#C19A6B]
+                 px-10 py-2 mb-4">
+              PRICE: ¥450
+            </p>
+            <button class="bg-[#333333] yu-mincho-pr6n text-[#C19A6B] py-2 px-4 text-sm hover:bg-[#555555]">
+              注文する
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image (Section 2) -->
+        <div class="flex justify-center items-center transition duration-300" id="rightImage2">
+          <img src="/images/menu4.jpg" alt="クロワッサン画像"
+            class="w-[372px] h-[500px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================
+     3) Third Menu Section
+     ============================== -->
+    <section id="menu3" class="py-10 border-2 border-[#C19A6B] mb-[80px]">
+      <div class="container mx-auto flex justify-evenly items-center transition duration-300" id="menu-container3">
+        <!-- Left Image (Section 3) -->
+        <div class="flex justify-center items-center transition duration-300" id="leftImage3">
+          <img src="/images/menu5.jpg" alt="Another Left Image"
+            class="w-[372px] h-[500px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+
+        <!-- Center Text Section (Section 3) -->
+        <div class="flex flex-col gap-6">
+          <!-- Card 5 -->
+          <div class="shadow-md p-6 border border-[#E0E0E0]
+               flex flex-col items-center justify-center
+               w-[412px] h-[240px]
+               transition duration-300" id="card5">
+            <h3 class="text-xl text-center hiragino-mincho-pron-bold mb-4 text-[#333333]">
+              ローストビーフ＆ブルーチーズサンド
+            </h3>
+            <p class="text-sm text-center yu-mincho-pr6n text-[#555555] mb-4">
+              厳選ローストビーフとコクのあるブルーチーズを贅沢にサンド。
+              林檎の爽やかな甘みで、最後まで飽きずに楽しめます。
+            </p>
+            <p class="text-lg hiragino-mincho-pron-bold bg-[#333333] text-[#C19A6B]
+                 px-10 py-2 mb-4">
+              PRICE: ¥450
+            </p>
+            <button class="bg-[#333333] yu-mincho-pr6n text-[#C19A6B] py-2 px-4 text-sm hover:bg-[#555555]">
+              注文する
+            </button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="shadow-md p-6 border border-[#E0E0E0]
+               flex flex-col items-center justify-center
+               w-[412px] h-[240px]
+               transition duration-300" id="card6">
+            <h3 class="text-xl text-center hiragino-mincho-pron-bold mb-4 text-[#333333]">
+              ケークサレ
+            </h3>
+            <p class="text-sm yu-mincho-pr6n text-center text-[#555555] mb-4">
+              葉野菜、ベーコン、プルーンを練り込んだ、ほんのり塩味の甘塩っぱいケーキ。
+              しっとりとした食感で軽い食事にもぴったりです。
+            </p>
+            <p class="text-lg hiragino-mincho-pron-bold bg-[#333333] text-[#C19A6B]
+                 px-10 py-2 mb-4">
+              PRICE: ¥600
+            </p>
+            <button class="bg-[#333333] yu-mincho-pr6n text-[#C19A6B] py-2 px-4 text-sm hover:bg-[#555555]">
+              注文する
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image (Section 3) -->
+        <div class="flex justify-center items-center transition duration-300" id="rightImage3">
+          <img src="/images/menu6.jpg" alt="Another Right Image"
+            class="w-[372px] h-[500px] object-cover border-2 border-[#D4AF37]" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Carousel Section -->
+    <section class="mb-[80px]">
+      <div class="mx-auto relative" id="customCarousel">
+        <div class="w-[1260px] mx-auto relative">
+          <!-- Arrow buttons remain unchanged -->
+          <button
+            class="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center"
+            id="prevBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="50" viewBox="0 0 35 50" fill="none">
+              <path d="M25 50L34.375 40.625L18.75 25L34.375 9.375L25 -8.19589e-07L2.18557e-06 25L25 50Z"
+                fill="#D4AF37" />
+            </svg>
+          </button>
+
+          <button
+            class="absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-10 w-12 h-12 rounded-full flex items-center justify-center"
+            id="nextBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="50" viewBox="0 0 35 50" fill="none">
+              <path d="M9.375 0L0 9.375L15.625 25L0 40.625L9.375 50L34.375 25L9.375 0Z" fill="#D4AF37" />
+            </svg>
+          </button>
+
+          <!-- New Grid-based carousel structure -->
+          <div class="relative overflow-hidden w-[1260px]">
+            <div id="carouselTrack"
+              class="grid grid-cols-[repeat(9,412px)] gap-[12px] transition-transform duration-300">
+              <!-- First page -->
+              <div class="h-[654px]">
+                <img src="/images/carousel1.jpg" alt="フワス ヴェルヴェンヌ" class="w-full h-full object-cover" />
+              </div>
+              <div class="h-[654px]">
+                <img src="/images/carousel2.jpg" alt="ソーセージとレンズ豆のタルティーヌ" class="w-full h-full object-cover" />
+              </div>
+              <div class="h-[654px]">
+                <img src="/images/carousel3.jpg" alt="塩豚とレンズ豆のパイ" class="w-full h-full object-cover" />
+              </div>
+              <!-- Second page -->
+              <div class="h-[654px]">
+                <img src="/images/carousel4.jpg" alt="トリュファード風クロワッサン" class="w-full h-full object-cover" />
+              </div>
+              <div class="h-[654px]">
+                <img src="/images/carousel5.jpg" alt="ローストビーフ＆ブルーチーズサンド" class="w-full h-full object-cover" />
+              </div>
+              <div class="h-[654px]">
+                <img src="/images/carousel6.jpg" alt="ケークサレ" class="w-full h-full object-cover" />
+              </div>
+              <!-- Third page -->
+              <div class="h-[654px]">
+                <img src="/images/carousel7.jpg" alt="フワス ヴェルヴェンヌ" class="w-full h-full object-cover" />
+              </div>
+              <div class="h-[654px]">
+                <img src="/images/carousel8.jpg" alt="ソーセージとレンズ豆のタルティーヌ" class="w-full h-full object-cover" />
+              </div>
+              <div class="h-[654px]">
+                <img src="/images/carousel9.jpg" alt="塩豚とレンズ豆のパイ" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Pagination Dots -->
+          <div id="carouselPagination" class="absolute bottom-[25px] right-20 flex space-x-2">
+            <div class="w-3 h-3 bg-[#C19A6B] rounded-full cursor-pointer" data-page="0"></div>
+            <div class="w-3 h-3 bg-[#333333] rounded-full cursor-pointer" data-page="1"></div>
+            <div class="w-3 h-3 bg-[#333333] rounded-full cursor-pointer" data-page="2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="location" class="mb-[80px] mx-auto">
+      <div class="container">
+        <h2 class="text-4xl mb-6 hiragino-mincho-pron-bold text-[#333333] text-center">
+          LOCATION
+        </h2>
+        <p class="text-lg text-[#555555] text-center mb-10 yu-mincho-pr6n">
+          お店の場所はこちらです。お気軽にお立ち寄りください。
+        </p>
+        <iframe
+  title="Our bakery location on Google Maps"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1621.0908729024638!2d139.69964074330827!3d35.64789358540413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b45f5311ed1%3A0x12987f54caa1ee65!2z44CSMTUwLTAwMzMg5p2x5Lqs6YO95riL6LC35Yy654y_5qW955S677yS77yZ4oiS77yR77yY!5e0!3m2!1sja!2sjp!4v1433666443406"
+  width="1366" height="450" frameborder="0"
+  style="border:2px solid #C19A6B;"
+  loading="lazy"
+  allowfullscreen
+  aria-hidden="false"
+  tabindex="0"
+  class="shadow-md border-2 border-[#D4AF37]">
+</iframe>
+
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-[80px] py-20 border-2 border-[#D4AF37]">
+      <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <!-- Left Form Section -->
+        <div class="flex-1 min-w-[300px] max-w-[50%] px-6">
+          <h2 class="text-4xl mb-6 hiragino-mincho-pron-bold text-[#333333]">Contact</h2>
+          <form action="#" method="POST" class="border border-[#E0E0E0] p-6 rounded shadow-sm">
+            <!-- Name Fields -->
+            <div class="flex flex-wrap justify-between gap-4 mb-4">
+              <div class="w-full sm:w-[48%]">
+                <label for="firstName" class="sr-only">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="First Name"
+                  class="w-full border border-[#E0E0E0] py-2 px-4 rounded focus:outline-none focus:border-[#C19A6B] placeholder-[#C19A6B]" />
+              </div>
+              <div class="w-full sm:w-[48%]">
+                <label for="lastName" class="sr-only">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last Name"
+                  class="w-full border border-[#E0E0E0] py-2 px-4 rounded focus:outline-none focus:border-[#C19A6B] placeholder-[#C19A6B]" />
+              </div>
+            </div>
+            <!-- Comment Field -->
+            <div class="mb-4">
+              <label for="comment" class="sr-only">Comment</label>
+              <textarea id="comment" name="comment" placeholder="Comment" rows="5"
+                class="w-full border border-[#E0E0E0] py-2 px-4 rounded focus:outline-none focus:border-[#C19A6B] placeholder-[#C19A6B]"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <div class="text-center">
+              <button type="submit"
+                class="bg-[#333333] text-[#C19A6B] py-2 px-6 rounded hover:bg-[#555555] transition duration-200">
+                Send
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Right Image Section -->
+        <div class="flex-1 max-w-[50%] px-6 mt-10 sm:mt-0">
+          <img src="/images/contact1.JPG" alt="Bakery Storefront"
+            class="w-full h-auto object-cover border border-[#D4AF37]" />
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-[#333333] text-[#C19A6B] py-5">
+    <div class="container mx-auto text-center">
+      <!-- Footer Content -->
+      <div class="flex flex-wrap justify-between items-start gap-8">
+        <!-- Left Section: Bakery Info -->
+        <div class="w-full sm:w-[30%] text-left">
+          <div class="w-305 h-45  mb-6">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.71 64.13">
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #ffffff;
+                  }
+                </style>
+              </defs>
+              <g>
+                <path class="cls-1"
+                  d="M0,28.81h14.5c2.85,0,5.03.63,6.53,1.88,1.51,1.25,2.27,2.83,2.27,4.72,0,1.58-.53,2.92-1.58,4.02-1.05,1.1-2.64,1.98-4.76,2.61,2.62.55,4.58,1.42,5.9,2.61,1.31,1.18,1.96,2.68,1.96,4.49,0,1.38-.37,2.61-1.12,3.67-.75,1.07-1.99,1.97-3.73,2.71-1.74.74-3.71,1.11-5.91,1.11H0v-1.41h2.29c.69,0,1.19-.11,1.51-.34.32-.22.48-.48.48-.77v-22.29c0-.53-.16-.93-.47-1.2-.31-.27-.77-.4-1.37-.4H0v-1.41ZM8.31,41.58h5.27c1.62,0,2.9-.48,3.86-1.43.96-.95,1.44-2.51,1.44-4.67,0-1.34-.23-2.38-.69-3.14-.46-.75-1.12-1.3-1.99-1.64-.87-.34-2.38-.52-4.52-.52-1.52,0-2.46.11-2.82.33-.36.22-.54.6-.54,1.15v9.92ZM8.31,42.99v10.72c0,.5.15.88.44,1.13.3.25.83.38,1.59.38h3.37c2.23,0,3.88-.49,4.95-1.48,1.07-.98,1.6-2.52,1.6-4.6,0-1.9-.55-3.41-1.65-4.5-1.1-1.1-2.63-1.65-4.57-1.65h-5.72Z" />
+                <path class="cls-1"
+                  d="M35.57,38.47c2.37,0,4.36.86,5.97,2.57,1.61,1.71,2.42,3.97,2.42,6.76,0,1.93-.36,3.58-1.08,4.94-.72,1.36-1.75,2.44-3.09,3.23-1.33.79-2.77,1.19-4.31,1.19-2.28,0-4.22-.87-5.81-2.6-1.58-1.73-2.38-3.97-2.38-6.74s.8-5.02,2.39-6.75c1.59-1.73,3.55-2.6,5.89-2.6ZM35.57,39.81c-1.41,0-2.56.63-3.46,1.91-.9,1.27-1.36,3.28-1.36,6.03s.45,4.84,1.34,6.13c.9,1.29,2.05,1.94,3.47,1.94s2.66-.65,3.56-1.94c.91-1.29,1.37-3.41,1.37-6.34,0-2.72-.45-4.69-1.35-5.91-.9-1.22-2.09-1.82-3.58-1.82Z" />
+                <path class="cls-1"
+                  d="M52.56,38.68v11.68c0,1.43.36,2.54,1.08,3.31.72.78,1.65,1.17,2.79,1.17,1.4,0,2.59-.57,3.58-1.7.98-1.14,1.47-2.55,1.47-4.26v-6.6c0-.6-.21-1.07-.65-1.4-.44-.33-1.27-.52-2.49-.55v-1.32l6.19-.32v14.47c0,.67.19,1.17.56,1.53.37.36.9.54,1.58.54h1.11v1.26l-5.93.13-.38-3.46c-1.05,1.24-2.11,2.17-3.17,2.8-1.07.63-2.14.94-3.23.94-1.59,0-2.92-.53-4-1.6-1.09-1.05-1.63-2.84-1.63-5.36v-7.65c0-.68-.27-1.19-.81-1.55-.38-.25-1.15-.39-2.32-.41v-1.32l6.25-.32Z" />
+                <path class="cls-1"
+                  d="M76.71,28.49v25.54c0,.36.11.62.32.81.31.25.7.38,1.15.38h1.86v1.41h-9.99v-1.41h1.77c.58,0,1-.14,1.29-.41.28-.28.43-.67.43-1.17v-21.44c0-.63-.17-1.08-.51-1.37-.46-.4-1.03-.6-1.71-.6h-1.58v-1.41l6.98-.32Z" />
+                <path class="cls-1"
+                  d="M100.8,54.69l.68,1.06c-.91.94-1.93,1.41-3.05,1.41-.85,0-1.57-.23-2.15-.7-.58-.46-1.09-1.28-1.53-2.45-1.19,1.25-2.24,2.09-3.14,2.51-.9.42-1.99.63-3.26.63-1.81,0-3.18-.39-4.12-1.17-.94-.78-1.41-1.77-1.41-2.99,0-1.83,1.07-3.35,3.22-4.56,2.15-1.21,5.01-2.02,8.59-2.42v-2.67c0-.95-.38-1.77-1.15-2.44-.76-.68-1.74-1.02-2.92-1.02-1.09,0-2.03.22-2.82.68-.56.34-.85.67-.85.99,0,.19.15.48.45.89.36.5.54.95.54,1.34,0,.56-.18,1.03-.54,1.38-.37.36-.84.53-1.43.53-.63,0-1.15-.21-1.57-.64-.42-.42-.63-.97-.63-1.64,0-1.24.7-2.38,2.1-3.41,1.4-1.03,3.23-1.54,5.5-1.54,2.09,0,3.69.45,4.8,1.36,1.1.91,1.66,2.02,1.66,3.33v9.63c0,.85.14,1.48.41,1.88.28.41.63.62,1.07.62.49,0,1-.2,1.54-.6ZM94.63,47.26c-3.19.44-5.44,1.15-6.77,2.14-.99.75-1.49,1.82-1.49,3.2,0,.96.26,1.72.77,2.26.51.55,1.19.82,2.02.82,1.48,0,2.76-.56,3.84-1.68,1.09-1.12,1.63-2.53,1.63-4.22v-2.52Z" />
+                <path class="cls-1"
+                  d="M103.61,39l5.85-.36c.24,1.11.41,2.4.53,3.88.79-1.28,1.72-2.24,2.79-2.88,1.07-.64,2.29-.96,3.64-.96,1.17,0,2.14.23,2.94.69.79.46,1.42,1.18,1.9,2.17.48.99.72,2.1.72,3.33v8.58c0,.64.14,1.1.43,1.36.29.27.77.41,1.45.41h1.24v1.41h-9.29v-1.41h.88c.83,0,1.4-.13,1.73-.4.32-.26.49-.66.49-1.18v-7.54c0-1.64-.25-2.86-.75-3.65-.7-1.13-1.77-1.69-3.2-1.69s-2.6.57-3.55,1.71c-.95,1.14-1.42,2.63-1.42,4.46v6.53c0,.64.15,1.1.44,1.36.29.27.78.41,1.46.41h1.22v1.41h-9.33v-1.41h1.22c.61,0,1.08-.13,1.4-.38.32-.25.48-.56.48-.94v-11.38c0-.75-.2-1.32-.61-1.71-.41-.39-.99-.58-1.76-.58h-.9v-1.22Z" />
+                <path class="cls-1"
+                  d="M140.64,40c1.26-1.27,2.41-1.9,3.46-1.9.63,0,1.15.2,1.56.6.41.4.62.89.62,1.46,0,.46-.14.85-.42,1.16-.28.31-.61.46-.99.46-.72,0-1.2-.44-1.45-1.32-.1-.38-.27-.56-.51-.56-.42,0-.89.28-1.39.85.54.74.91,1.38,1.11,1.93.2.55.3,1.13.3,1.76,0,1.09-.26,2.05-.79,2.89-.53.83-1.4,1.57-2.62,2.21-1.22.64-2.39.96-3.51.96h-2.05c-1.45,0-2.42.15-2.9.46-.48.31-.72.77-.72,1.37,0,.49.19.87.58,1.13.39.27,1.12.4,2.2.4l4.65-.09c2.35,0,4.04.39,5.07,1.17,1.03.79,1.55,1.86,1.55,3.23,0,1.5-.59,2.77-1.77,3.8-1.64,1.45-4.09,2.18-7.35,2.18-2.7,0-4.7-.49-6-1.49-1.03-.78-1.54-1.65-1.54-2.61,0-.74.33-1.42.99-2.03.66-.61,1.77-1.07,3.32-1.37-1.24-.3-2.17-.74-2.8-1.33-.63-.59-.94-1.31-.94-2.17,0-.81.25-1.5.76-2.1.51-.6,1.39-1.11,2.64-1.53-1.06-.59-1.87-1.3-2.41-2.14-.54-.83-.81-1.79-.81-2.87,0-1.7.67-3.13,2.01-4.29,1.34-1.15,3.08-1.73,5.23-1.73.88,0,1.72.13,2.54.38.81.25,1.6.63,2.37,1.15ZM136.81,56.65c-2.31,0-3.95.32-4.94.96-.99.64-1.48,1.41-1.48,2.31,0,.85.37,1.52,1.11,2.01.98.65,2.37.98,4.18.98,2.16,0,3.78-.36,4.87-1.07,1.09-.72,1.64-1.51,1.64-2.39,0-.51-.17-1-.51-1.44-.34-.44-.87-.78-1.62-1.02-.74-.23-1.83-.35-3.25-.35ZM135.7,39.68c-1.11,0-2.04.41-2.76,1.23-.73.82-1.09,1.97-1.09,3.45,0,1.58.36,2.81,1.09,3.68.73.87,1.66,1.31,2.78,1.31s2.05-.42,2.77-1.27c.72-.85,1.08-2.06,1.08-3.64,0-1.47-.37-2.63-1.1-3.48-.73-.85-1.66-1.28-2.78-1.28Z" />
+                <path class="cls-1"
+                  d="M164.36,47.94h-12.62c.06,2.69.56,4.58,1.5,5.68,1.08,1.24,2.45,1.86,4.12,1.86,2.46,0,4.43-1.4,5.92-4.19l1.22.53c-1.83,3.56-4.48,5.34-7.94,5.34-2.36,0-4.34-.85-5.95-2.56-1.61-1.7-2.41-3.89-2.41-6.55,0-2.86.79-5.17,2.38-6.93,1.58-1.76,3.54-2.64,5.86-2.64,1.71,0,3.18.44,4.42,1.32,1.24.87,2.18,2.14,2.8,3.78.44,1.16.67,2.61.7,4.36ZM151.74,46.6h7.64c.45,0,.8-.15,1.05-.46.25-.31.38-.83.38-1.57,0-1.38-.43-2.55-1.29-3.52-.86-.96-1.87-1.45-3.04-1.45-1.31,0-2.41.58-3.32,1.75-.91,1.17-1.38,2.92-1.42,5.25Z" />
+                <path class="cls-1"
+                  d="M166.81,39l6.34-.32v7.13c.68-2.34,1.49-4.12,2.45-5.32.95-1.2,2.13-1.81,3.53-1.81.96,0,1.72.29,2.29.88.57.58.86,1.36.86,2.34,0,.79-.19,1.4-.58,1.84-.38.44-.86.66-1.44.66s-1.02-.19-1.36-.57c-.34-.38-.52-.88-.52-1.52,0-.41.1-.8.3-1.17.19-.33.28-.52.28-.58,0-.19-.12-.28-.36-.28-.51,0-1.1.3-1.75.9-.9.84-1.6,1.99-2.09,3.46-.75,2.28-1.13,4.1-1.13,5.48v3.78c0,.43.15.75.45.98.3.23.81.34,1.54.34h2.24v1.41h-10.95v-1.41h1.75c.59,0,1.03-.12,1.34-.35.3-.23.45-.51.45-.84v-11.23c0-.85-.18-1.48-.55-1.87-.36-.4-.88-.59-1.56-.59h-1.55v-1.34Z" />
+                <path class="cls-1"
+                  d="M183.85,39l7.02-.21v15.16c0,.41.1.71.3.88.29.25.65.38,1.09.38h1.99v1.41h-10.03v-1.41h1.86c.55,0,.95-.13,1.21-.41.26-.27.38-.66.38-1.17v-11.1c0-.7-.2-1.23-.6-1.59-.4-.36-1-.53-1.79-.53h-1.45v-1.41ZM188.74,28.49c.56,0,1.06.22,1.49.64.42.42.64.93.64,1.5s-.21,1.05-.62,1.47c-.42.41-.91.62-1.49.62s-1.08-.21-1.5-.63c-.42-.42-.63-.91-.63-1.48s.21-1.06.64-1.48c.43-.43.91-.64,1.47-.64Z" />
+                <path class="cls-1"
+                  d="M212.85,47.94h-12.62c.06,2.69.56,4.58,1.51,5.68,1.08,1.24,2.45,1.86,4.12,1.86,2.46,0,4.43-1.4,5.93-4.19l1.22.53c-1.83,3.56-4.48,5.34-7.94,5.34-2.35,0-4.34-.85-5.95-2.56-1.61-1.7-2.41-3.89-2.41-6.55,0-2.86.79-5.17,2.38-6.93,1.59-1.76,3.54-2.64,5.86-2.64,1.7,0,3.18.44,4.42,1.32,1.24.87,2.17,2.14,2.8,3.78.44,1.16.67,2.61.7,4.36ZM200.23,46.6h7.64c.45,0,.8-.15,1.05-.46.25-.31.38-.83.38-1.57,0-1.38-.43-2.55-1.29-3.52-.86-.96-1.87-1.45-3.04-1.45-1.31,0-2.41.58-3.32,1.75-.91,1.17-1.38,2.92-1.42,5.25Z" />
+              </g>
+              <g>
+                <path class="cls-1"
+                  d="M225.9,1.17h23.86v2.83h-4.38c-1.54,0-2.54.27-3,.81-.47.54-.7,1.86-.7,3.94v17.21h25.52V8.76c0-2.16-.22-3.5-.66-4-.44-.5-1.48-.75-3.11-.75h-4.08V1.17h23.71v2.83h-4.34c-1.08,0-1.84.14-2.28.42-.44.28-.8.75-1.08,1.43-.15.43-.23,1.55-.23,3.36v40.16c0,1.94.16,3.11.49,3.51.65.86,1.85,1.28,3.59,1.28h3.85v2.83h-23.71v-2.83h4.08c1.61,0,2.7-.44,3.28-1.32.32-.48.49-1.74.49-3.78v-19.4h-25.52v19.71c0,1.96.15,3.15.45,3.55.63.83,1.71,1.25,3.25,1.25h4.38v2.83h-23.86v-2.83h4.57c.81,0,1.45-.16,1.93-.49.48-.32.83-.79,1.06-1.4.12-.4.19-1.47.19-3.21V8.76c0-2.09-.23-3.4-.7-3.94-.47-.54-1.48-.81-3.04-.81h-4V1.17Z" />
+                <path class="cls-1"
+                  d="M313.69,0h2.53l20.02,51.07c.81,2.07,2.45,3.1,4.94,3.1h1.74v2.83h-22.27v-2.83h1.77c2.31,0,3.95-.25,4.91-.75.65-.35.98-.89.98-1.62,0-.43-.09-.88-.27-1.36l-4.62-11.85h-22.08l-2.59,6.79c-.68,1.81-1.02,3.25-1.02,4.3,0,1.24.57,2.29,1.72,3.17,1.14.88,2.81,1.32,5,1.32h1.89v2.83h-20.23v-2.83c2.16,0,3.87-.47,5.13-1.42,1.26-.94,2.41-2.74,3.47-5.38L313.69,0ZM312.59,10.76l-10.03,24.88h19.72l-9.69-24.88Z" />
+                <path class="cls-1"
+                  d="M344.92,1.17h25.89v2.83h-6.19c-.98,0-1.7.26-2.17.77-.47.52-.7,1.33-.7,2.43v44.05c0,1.06.3,1.81.89,2.24.59.44,1.78.66,3.56.66h7.84c4.17,0,7.58-1.39,10.23-4.17,2.65-2.78,4.58-7.61,5.79-14.48h2.64l-1.28,21.48h-46.5v-2.83h4.57c1.56,0,2.66-.3,3.28-.89.63-.59.94-1.54.94-2.85V6.83c0-.93-.27-1.64-.79-2.11-.53-.48-1.31-.72-2.34-.72h-5.66V1.17Z" />
+              </g>
+            </svg>
+          </div>
+          <p class="text-lg mb-2 yu-mincho-pr6n">
+            〒150-0033 東京都渋谷区猿楽町29-18
+          </p>
+          <p class="text-lg mb-2 yu-mincho-pr6n">TEL: 03-3344-1010</p>
+          <p class="text-lg mb-4 yu-mincho-pr6n">営業時間: 10:00～20:00</p>
+        </div>
+
+        <!-- Center Section: Navigation Links -->
+        <div class="w-full sm:w-[30%] text-center">
+          <ul class="space-y-2 text-[18px] hiragino-mincho-pron-bold">
+            <li><a href="#home" class="hover:text-[#D4AF37]">Home</a></li>
+            <li><a href="#about" class="hover:text-[#D4AF37]">About Us</a></li>
+            <li><a href="#news" class="hover:text-[#D4AF37]">News</a></li>
+            <li><a href="#menu" class="hover:text-[#D4AF37]">Menu</a></li>
+            <li><a href="#location" class="hover:text-[#D4AF37]">Location</a></li>
+            <li><a href="#contact" class="hover:text-[#D4AF37]">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Section: Social Media -->
+        <div class="w-full sm:w-[30%] text-left">
+          <ul class="flex flex-col space-y-4 justify-start hiragino-mincho-pron-bold">
+            <!-- Instagram -->
+            <li>
+              <a href="#" class="hover:text-[#D4AF37] flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#C19A6B]" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM18 7a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5A.75.75 0 0 1 18 7Zm-6 2.5a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" />
+                </svg>
+                <span>Instagram</span>
+              </a>
+            </li>
+            <!-- Facebook -->
+            <li>
+              <a href="#" class="hover:text-[#D4AF37] flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#C19A6B]" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.81v-9.294H9.692v-3.622h3.118V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.241h-1.918c-1.504 0-1.796.715-1.796 1.764v2.312h3.592l-.468 3.622h-3.124V24h6.127c.73 0 1.324-.593 1.324-1.324V1.325C24 .593 23.407 0 22.675 0Z" />
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </li>
+            <!-- Twitter -->
+            <li>
+              <a href="#" class="hover:text-[#D4AF37] flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-[#C19A6B]" viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path
+                    d="M23.954 4.569c-.885.394-1.83.658-2.825.775 1.014-.609 1.794-1.574 2.163-2.724-.951.555-2.005.959-3.127 1.184-.897-.959-2.178-1.555-3.594-1.555-2.724 0-4.932 2.208-4.932 4.932 0 .39.045.765.127 1.124-4.094-.205-7.725-2.165-10.151-5.144-.425.729-.667 1.575-.667 2.476 0 1.708.869 3.213 2.188 4.096-.803-.025-1.555-.246-2.213-.615v.061c0 2.385 1.693 4.374 3.946 4.829-.413.111-.849.171-1.296.171-.317 0-.615-.03-.916-.086.631 1.953 2.445 3.379 4.604 3.418-1.685 1.318-3.809 2.102-6.102 2.102-.394 0-.779-.022-1.17-.067 2.179 1.394 4.768 2.208 7.557 2.208 9.054 0 14.003-7.496 14.003-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.457-2.548l-.047-.02Z" />
+                </svg>
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Back to Top Button -->
+      <div class="mt-8 flex justify-end">
+        <a href="#home"
+          class="inline-flex items-center justify-center bg-[#C19A6B] text-white py-2 px-6 hover:bg-[#D4AF37] transition duration-200 space-x-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd" />
+          </svg>
+          <span class="hiragino-mincho-pron-bold">トップページへ戻る</span>
+        </a>
+      </div>
+
+      <!-- Bottom Section: Copyright -->
+      <div class="border-t border-[#C19A6B] mt-8 pt-4">
+        <p class="text-center text-sm text-[#C19A6B] hiragino-mincho-pron-bold">
+          &copy; 2025 Boulangerie HAL. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="/js/main.js"></script>
+  <script src="/js/carousel.js"></script>
+  <script src="/js/gsap.js"></script>
+</body>
+
+</html>
